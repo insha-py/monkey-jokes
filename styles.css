@@ -96,6 +96,24 @@ p {
     margin-top: 5px;
 }
 
+/* Contact Button Styles */
+#contact-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
 /* Responsive design adjustments for smaller screens */
 @media (max-width: 768px) {
     /* Adjust font sizes for smaller screens */
