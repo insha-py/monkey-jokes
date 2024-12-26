@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monkey Business</title>
+    <title>Jungle Jokes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-        <h1 id="greeting"></h1>
-        <img id="friend-face" src="friend-face.png" alt="Friend's Face">
-        <button onclick="generateJoke()">Tell me another one!</button>
-        <p id="joke-text"></p>
+        <h1 id="greeting">Hi Prithvij, ready for some monkey business?</h1>
+        <div class="joke-container">
+            <img id="friend-face" src="friend-face.png" alt="Your Friend's Face">
+            <p id="joke">Loading a jungle joke...</p>
+        </div>
+        <button onclick="generateJoke()">Tell Me Another Joke!</button>
     </div>
 
-    <div class="contact" onclick="showPhoneNumber()">
-        <p>If you didn't laugh, contact her</p>
-        <img id="contact-face" src="contact-face.png" alt="Contact Image">
+    <div class="contact">
+        <p>If you didn’t breathe through your nose, contact her:</p>
+        <img id="contact-face" src="contact-face.png" alt="Contact Person">
     </div>
-
-    <p id="phone-number" style="display: none;">Phone Number: 7307127496</p>
 
     <script src="script.js"></script>
 </body>
