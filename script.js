@@ -36,3 +36,7 @@ function generateJoke() {
 // Generate the first joke on page load
 generateJoke();
 
+// Function to display the contact info
+function showContactInfo() {
+    alert("Call her at: 7307127496");
+}
