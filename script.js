@@ -47,4 +47,9 @@ function showPhoneNumber() {
         phoneNumberElement.style.display = 'none'; // Hide phone number
     }
 }
-
+// Add an event listener to the contact image to also toggle the phone number
+document.getElementById('contact-face').addEventListener('click', function(event) {
+    // Prevent the click event from propagating to the parent .contact div
+    event.stopPropagation();
+    showPhoneNumber();
+});
