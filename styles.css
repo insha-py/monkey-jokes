@@ -1,44 +1,43 @@
 /* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    background: url('jungle-background.jpeg') no-repeat center center fixed;
+    background: url('jungle-background.jpg') no-repeat center center;
     background-size: cover;
     margin: 0;
     padding: 0;
     color: #fff;
     text-align: center;
-    overflow-x: hidden;  /* Prevents horizontal scrolling */
+    overflow-x: hidden;
+    background-attachment: scroll;
 }
 
 /* Container for the main content */
 .container {
     padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.5); /* Adds a slight overlay to enhance text readability */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     display: inline-block;
     margin: 20px auto;
-    max-width: 90%; /* Ensures the container adjusts for small screens */
+    max-width: 90%;
 }
 
-/* Heading Styles */
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Friend's Face Styles */
 #friend-face {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 5px solid #FFD700; /* Adds a golden border */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
-    transition: transform 0.5s; /* Smooth transition for animations */
+    border-radius: 50%;
+    border: 5px solid #FFD700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
     margin-bottom: 20px;
-    object-fit: cover; /* Ensures the image fully covers the circular area */
-    object-position: center; /* Centers the image inside the circle */
-    max-width: 100%;  /* Makes sure the image doesn't overflow */
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
 }
 
 /* Button Styles */
@@ -76,6 +75,7 @@ p {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;  /* Makes the contact image clickable */
 }
 
 .contact p {
@@ -85,7 +85,6 @@ p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-/* Contact Face as Button */
 #contact-face {
     width: 80px;
     height: 80px;
@@ -99,16 +98,14 @@ p {
 
 /* Phone Number Section */
 #phone-number {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #FFD700;
     margin-top: 10px;
     text-align: center;
-    display: none; /* Hidden by default */
 }
 
 /* Responsive design adjustments for smaller screens */
 @media (max-width: 768px) {
-    /* Adjust font sizes for smaller screens */
     h1 {
         font-size: 2em;
     }
@@ -117,7 +114,6 @@ p {
         font-size: 1.2em;
     }
 
-    /* Adjust image size on smaller screens */
     #friend-face {
         width: 120px;
         height: 120px;
@@ -128,7 +124,6 @@ p {
         font-size: 1em;
     }
 
-    /* Make the container more mobile-friendly */
     .container {
         padding: 30px 10px;
     }
