@@ -4,35 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkey Business</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Main Content Container -->
     <div class="container">
-        <!-- Greeting Text -->
-        <h1 id="greeting"></h1>
-        
-        <!-- Friend's Face -->
-        <img id="friend-face" src="friend-face.png" alt="Friend's Face">
-
-        <!-- Joke Text -->
-        <p id="joke"></p>
-
-        <!-- Button to Generate Joke -->
-        <button onclick="generateJoke()">Generate Joke</button>
+        <h1>Hi Prithvij, ready for some monkey business?</h1>
+        <img id="friend-face" src="prithvij-face.jpg" alt="Friend's Face">
+        <button onclick="tellJoke()">Tell me a joke</button>
+        <p id="joke-text"></p>
     </div>
 
-    <!-- Contact Section (Image as Button) -->
-    <div class="contact">
-    <p>If you didn't breathe through your nose, contact her</p>
-    <button id="contact-button">
-        <img id="contact-face" src="contact-face.png" alt="Contact Face">
-    </button>
-    <div id="phone-number" style="display:none;">
-        <p>Call her at: <strong>+91 7307127496</strong></p>
+    <!-- Contact Button Section -->
+    <div class="contact" onclick="showPhoneNumber()">
+        <img id="contact-face" src="contact-person.jpg" alt="Contact Image">
+        <p>If you didn't laugh, contact her!</p>
     </div>
-</div>
-
+    
+    <!-- Hidden phone number -->
+    <div id="phone-number" style="display:none; color: #FFD700; font-size: 1.5em; margin-top: 10px;">
+        Call us at: 123-456-7890
+    </div>
 
     <script src="script.js"></script>
 </body>
