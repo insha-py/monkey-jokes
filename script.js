@@ -36,7 +36,7 @@ function generateJoke() {
 // Generate the first joke on page load
 generateJoke();
 
-// Function to display the contact info
-function showContactInfo() {
+// Add click functionality to the contact face
+document.getElementById("contact-face").addEventListener("click", function () {
     alert("Call her at: 7307127496");
-}
+});
