@@ -9,10 +9,10 @@ const jokes = [
     "Why wasn’t the cactus invited to hang out with the mushrooms? He wasn’t a fungi.",
     "Why can't a nose be 12 inches long? Because then it would be a foot.",
     "How much do rainbows weigh? Not much. They’re actually pretty light.",
-    "Why do squid swim i salt water? Because pepper makes them sneeze",
+    "Why do squid swim in salt water? Because pepper makes them sneeze",
     "How do you raise a baby elephant? With a crane",
     "Why did the hen break up with the chicken? Cause he had a side chick",
-    "WHat do you call an emo cow? Mooooooo-dy cow",
+    "What do you call an emo cow? Mooooooo-dy cow",
     "What's the difference between spring rolls and summer rolls? Their seasoning."
 ];
 
@@ -35,3 +35,15 @@ function generateJoke() {
 
 // Generate the first joke on page load
 generateJoke();
+
+// JavaScript to toggle the phone number display when the contact button is clicked
+document.getElementById('contact-button').addEventListener('click', function() {
+    var phoneNumberDiv = document.getElementById('phone-number');
+    
+    // Toggle visibility of the phone number
+    if (phoneNumberDiv.style.display === 'none') {
+        phoneNumberDiv.style.display = 'block';
+    } else {
+        phoneNumberDiv.style.display = 'none';
+    }
+});
