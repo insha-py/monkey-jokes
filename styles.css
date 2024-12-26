@@ -1,0 +1,104 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('jungle-background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Adds a slight overlay to enhance text readability */
+    border-radius: 15px;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Joke Section */
+.joke-container {
+    margin: 30px auto;
+    display: inline-block;
+}
+
+/* Friend's Face Styles */
+#friend-face {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #FFD700; /* Adds a golden border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+    transition: transform 0.5s; /* Smooth transition for animations */
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensures the image fully covers the circular area */
+    object-position: center; /* Centers the image inside the circle */
+}
+
+/* Rotate animation when the joke changes */
+#friend-face.spin {
+    transform: rotate(360deg);
+}
+
+/* Button Styles */
+button {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #FFC300;
+    transform: scale(1.1);
+}
+
+/* Joke Text */
+p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Contact Section Styles */
+.contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact p {
+    margin: 0;
+    font-size: 1em;
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#contact-face {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #FFD700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    object-position: center;
+    margin-top: 5px;
+}
