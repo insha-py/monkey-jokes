@@ -17,7 +17,7 @@ const jokes = [
 ];
 
 // Set a fixed greeting
-const greetingMessage = "hi prithvij, ready for some monkey business?";
+const greetingMessage = "Hi prithvij, ready for some monkey business?";
 document.getElementById("greeting").innerText = greetingMessage;
 
 // Display a random joke and animate the friend's face
@@ -36,20 +36,3 @@ function generateJoke() {
 // Generate the first joke on page load
 generateJoke();
 
-// JavaScript to toggle the phone number display when the contact button is clicked
-// Function to show the phone number when the contact image is clicked
-function showPhoneNumber() {
-    var phoneNumberElement = document.getElementById('phone-number');
-    // Toggle visibility of the phone number
-    if (phoneNumberElement.style.display === 'none' || phoneNumberElement.style.display === '') {
-        phoneNumberElement.style.display = 'block'; // Show phone number
-    } else {
-        phoneNumberElement.style.display = 'none'; // Hide phone number
-    }
-}
-// Add an event listener to the contact image to also toggle the phone number
-document.getElementById('contact-face').addEventListener('click', function(event) {
-    // Prevent the click event from propagating to the parent .contact div
-    event.stopPropagation();
-    showPhoneNumber();
-});
