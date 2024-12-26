@@ -1,20 +1,23 @@
 /* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    background: url('jungle-background.jpeg') no-repeat center center fixed;
+    background: url('jungle-background.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
     color: #fff;
     text-align: center;
+    overflow-x: hidden;  /* Prevents horizontal scrolling */
 }
 
+/* Container for the main content */
 .container {
     padding: 50px 20px;
     background: rgba(0, 0, 0, 0.5); /* Adds a slight overlay to enhance text readability */
     border-radius: 15px;
     display: inline-block;
     margin: 20px auto;
+    max-width: 90%; /* Ensures the container adjusts for small screens */
 }
 
 /* Heading Styles */
@@ -22,12 +25,6 @@ h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/* Joke Section */
-.joke-container {
-    margin: 30px auto;
-    display: inline-block;
 }
 
 /* Friend's Face Styles */
@@ -41,11 +38,7 @@ h1 {
     margin-bottom: 20px;
     object-fit: cover; /* Ensures the image fully covers the circular area */
     object-position: center; /* Centers the image inside the circle */
-}
-
-/* Rotate animation when the joke changes */
-#friend-face.spin {
-    transform: rotate(360deg);
+    max-width: 100%;  /* Makes sure the image doesn't overflow */
 }
 
 /* Button Styles */
@@ -101,4 +94,38 @@ p {
     object-fit: cover;
     object-position: center;
     margin-top: 5px;
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    /* Adjust image size on smaller screens */
+    #friend-face {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+
+    /* Make the container more mobile-friendly */
+    .container {
+        padding: 30px 10px;
+    }
+
+    .contact {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px;
+    }
 }
