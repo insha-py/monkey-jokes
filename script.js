@@ -37,13 +37,14 @@ function generateJoke() {
 generateJoke();
 
 // JavaScript to toggle the phone number display when the contact button is clicked
-document.getElementById('contact-button').addEventListener('click', function() {
-    var phoneNumberDiv = document.getElementById('phone-number');
-    
+// Function to show the phone number when the contact image is clicked
+function showPhoneNumber() {
+    var phoneNumberElement = document.getElementById('phone-number');
     // Toggle visibility of the phone number
-    if (phoneNumberDiv.style.display === 'none') {
-        phoneNumberDiv.style.display = 'block';
+    if (phoneNumberElement.style.display === 'none' || phoneNumberElement.style.display === '') {
+        phoneNumberElement.style.display = 'block'; // Show phone number
     } else {
-        phoneNumberDiv.style.display = 'none';
+        phoneNumberElement.style.display = 'none'; // Hide phone number
     }
-});
+}
+
