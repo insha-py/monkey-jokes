@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jungle Jokes</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Monkey Business</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main Content Container -->
     <div class="container">
-        <h1 id="greeting">Hi Prithvij, ready for some monkey business?</h1>
-        <div class="joke-container">
-            <img id="friend-face" src="friend-face.png" alt="Your Friend's Face">
-            <p id="joke">Loading a jungle joke...</p>
-        </div>
-        <button onclick="generateJoke()">Tell Me Another Joke!</button>
+        <!-- Greeting Text -->
+        <h1 id="greeting"></h1>
+        
+        <!-- Friend's Face -->
+        <img id="friend-face" src="friend-face.png" alt="Friend's Face">
+
+        <!-- Joke Text -->
+        <p id="joke"></p>
+
+        <!-- Button to Generate Joke -->
+        <button onclick="generateJoke()">Generate Joke</button>
     </div>
 
+    <!-- Contact Section (Image as Button) -->
     <div class="contact">
-    <p>If you didn't breathe through your nose, contact her</p>
-    <button id="contact-button">
-        <img id="contact-face" src="contact-face.png" alt="Contact Face">
-    </button>
-    <div id="phone-number" style="display:none;">
-        <p>Call me at: <strong>+91 7307127496</strong></p>
+        <p>If you didn't laugh, contact her:</p>
+        <!-- Wrapping the contact image with a link that uses the "tel:" scheme -->
+        <a href="tel:+1234567890" id="contact-link">
+            <img src="contact-face.png" alt="Contact Image" id="contact-face">
+        </a>
+        <!-- Optional Phone Number Display -->
+        <div id="phone-number">Call me: +1234567890</div>
     </div>
-</div>
-
 
     <script src="script.js"></script>
 </body>
